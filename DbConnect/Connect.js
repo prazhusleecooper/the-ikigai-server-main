@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
 
 // DB CONFIGS
-const dbHost = 'YOUR DB HOST';
-const dbUserName = 'YOUR DB USER NAME';
-const dbPassword = 'YOUR DB PASSWORD';
-const dbName ='YOUR DB NAME';
+const dbHost = "ikigai.u2vbktk.mongodb.net";
+const dbUserName = 'root';
+const dbPassword = 'root';
+const dbName ='ikigai-db';
 const mongoUrl =
 	'mongodb+srv://' +
 	dbUserName +

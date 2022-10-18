@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+const serverless = require("serverless-http");
 
 import { connectDB } from './DbConnect/Connect.js';
 import router from './routes.js';
@@ -30,4 +31,6 @@ export const startServer = async () => {
 
     });
 
+    module.exports.handler = serverless(app);
+    
 };
